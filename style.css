@@ -1,0 +1,77 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+body, html {
+  width: 100%;
+}
+
+#header {
+  text-align: center;
+  font-size: 15em;
+}
+
+#icons {
+	text-align: center;
+	width:100%;
+	margin: 50px auto 150px;
+}
+
+#icons span{
+width:33.33333333%;
+  float: left;
+}
+
+#icons img {
+ width: 150px;
+ transition: width 2s;
+}
+
+#icons img:hover {
+ width: 175px;
+}
+
+.crossfade {
+  	text-align: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.crossfade img {
+    position:absolute;
+    -webkit-animation-name: fade;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 6s;
+    animation-name: fade;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+}
+
+#pic1 {
+
+}
+#pic2 {
+
+    -webkit-animation-delay: -4s;
+}
+#pic3 {
+
+    -webkit-animation-delay: -2s;
+}
+
+@-webkit-keyframes fade {
+    0% {opacity: 0;}
+    20% {opacity: 1;}
+    33% {opacity: 1;}
+    53% {opacity: 0;}
+    100% {opacity: 0;}
+}
+@keyframes fade {
+    0% {opacity: 0;}
+    20% {opacity: 1;}
+    33% {opacity: 1;}
+    53% {opacity: 0;}
+    100% {opacity: 0;}
+}
