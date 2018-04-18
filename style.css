@@ -8,6 +8,12 @@ body, html {
   width: 100%;
 }
 
+#parent {
+  display: flex;
+justify-content: center;
+align-items: center;
+}
+
 #header {
   text-align: center;
   font-size: 15em;
@@ -16,6 +22,9 @@ body, html {
 #jobTitle {
   text-align: center;
   font-size: 4.5em;
+    border-top: 1px solid white;
+    display: inline;
+      margin: 0 auto;
 }
 
 #icons {
@@ -42,12 +51,12 @@ width:33.33333333%;
   text-align: center;
   width: 100%;
   margin: 500 auto 0;
-  border: 5px solid yellow;
+  border: 5px solid black;
 }
 
 .apps {
   margin: 0 auto;
-  border: 5px solid red;
+  border: 5px solid black;
   width: 90%;
   display: grid;
   grid-template-columns: auto auto;
@@ -56,7 +65,7 @@ width:33.33333333%;
 .app {
   width: 90%;
   margin: 0 auto;
-  border: 5px solid green;
+  border: 5px solid black;
 }
 
 .title {
@@ -64,7 +73,7 @@ width:33.33333333%;
 }
 
 .description {
-
+  font-size: 2em;
 }
 
 .slideshow {
