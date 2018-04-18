@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>LitSauce</title>
+	<title>iDeveloper</title>
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
+<style>
+	.mySlides {display:none}
+	.w3-left, .w3-right, .w3-badge {cursor:pointer}
+	.w3-badge {height:13px;width:13px;padding:0}
+</style>
 <body>
 	<div id="header">
 		Michael Vasios
+	</div>
+	<div id="jobTitle">
+		Software Developer
 	</div>
 
 	<div id="icons">
@@ -18,14 +26,84 @@
 	</div>
 	<br />
 
-			<div class="crossfade">
-					<img id="pic3" src="screenshots/kindlywelcome.png">
+	<div class="bodyWrapper">
+		<div class="apps">
+			<div class="app">
+				<div class='title'>
+					Kindly
+				</div>
+				<div class="w3-content w3-display-container">
+					<img class="mySlides" src="screenshots/kindlywelcome.png" style="width:100%">
+					<img class="mySlides" src="screenshots/kindly2.png" style="width:100%">
+					<img class="mySlides" src="screenshots/kindly3.png" style="width:100%">
+					<img class="mySlides" src="screenshots/kindly4.png" style="width:100%">
 
-					<img id="pic2" src="screenshots/kindly2.png">
+					<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+					<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+				</div>
 
-					<img id="pic1" src="screenshots/kindly3.png">
-
+				<div class='description'>
+					Tech stack includes Javascript, Node, React
+				</div>
 			</div>
 
+			<div class="app">
+				<div class='title'>
+					Seeker
+				</div>
+				<div class="w3-content w3-display-container slideshow">
+					<img class="mySlides2" src="screenshots/seekerwelcome.png" style="width:100%">
+					<img class="mySlides2" src="screenshots/seeker2.png" style="width:100%">
+					<img class="mySlides2" src="screenshots/seeker3.png" style="width:100%">
+					<img class="mySlides2" src="screenshots/seeker4.png" style="width:100%">
+
+					<button class="w3-button w3-black w3-display-left" onclick="plusDivs2(-1)">&#10094;</button>
+					<button class="w3-button w3-black w3-display-right" onclick="plusDivs2(1)">&#10095;</button>
+				</div>
+				<div class='description'>
+					Tech Stack includes Semantic, React, Javascript, Node, React.
+				</div>
+			</div>
+		</div>
+	</div>
+
 </body>
+<script>
+	var slideIndex = 1;
+	showDivs(slideIndex);
+
+	function plusDivs(n) {
+	  showDivs(slideIndex += n);
+	}
+
+	function showDivs(n) {
+	  var i;
+	  var x = document.getElementsByClassName("mySlides");
+	  if (n > x.length) {slideIndex = 1}
+	  if (n < 1) {slideIndex = x.length}
+	  for (i = 0; i < x.length; i++) {
+	     x[i].style.display = "none";
+	  }
+	  x[slideIndex-1].style.display = "block";
+	}
+
+	var slideIndex2 = 1;
+	showDivs2(slideIndex2);
+
+	function plusDivs2(n) {
+		showDivs2(slideIndex2 += n);
+	}
+
+	function showDivs2(n) {
+		var j;
+		var y = document.getElementsByClassName("mySlides2");
+		if (n > y.length) {slideIndex2 = 1}
+		if (n < 1) {slideIndex2 = y.length}
+		for (j = 0; j < y.length; j++) {
+			 y[j].style.display = "none";
+		}
+		y[slideIndex2-1].style.display = "block";
+	}
+
+</script>
 </html>

@@ -13,10 +13,15 @@ body, html {
   font-size: 15em;
 }
 
+#jobTitle {
+  text-align: center;
+  font-size: 4.5em;
+}
+
 #icons {
 	text-align: center;
 	width:100%;
-	margin: 50px auto 150px;
+	margin: 50px auto 200px;
 }
 
 #icons span{
@@ -30,48 +35,38 @@ width:33.33333333%;
 }
 
 #icons img:hover {
- width: 175px;
+  width: 175px;
 }
 
-.crossfade {
-  	text-align: center;
+.bodyWrapper {
+  text-align: center;
   width: 100%;
+  margin: 500 auto 0;
+  border: 5px solid yellow;
+}
+
+.apps {
   margin: 0 auto;
+  border: 5px solid red;
+  width: 90%;
+  display: grid;
+  grid-template-columns: auto auto;
 }
 
-.crossfade img {
-    position:absolute;
-    -webkit-animation-name: fade;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-duration: 6s;
-    animation-name: fade;
-    animation-iteration-count: infinite;
-    animation-duration: 6s;
+.app {
+  width: 90%;
+  margin: 0 auto;
+  border: 5px solid green;
 }
 
-#pic1 {
-
-}
-#pic2 {
-
-    -webkit-animation-delay: -4s;
-}
-#pic3 {
-
-    -webkit-animation-delay: -2s;
+.title {
+  font-size: 4.5em;
 }
 
-@-webkit-keyframes fade {
-    0% {opacity: 0;}
-    20% {opacity: 1;}
-    33% {opacity: 1;}
-    53% {opacity: 0;}
-    100% {opacity: 0;}
+.description {
+
 }
-@keyframes fade {
-    0% {opacity: 0;}
-    20% {opacity: 1;}
-    33% {opacity: 1;}
-    53% {opacity: 0;}
-    100% {opacity: 0;}
+
+.slideshow {
+  width: 100%;
 }
