@@ -1,30 +1,34 @@
+html div {
+  font-family: 'Oswald', sans-serif;
+}
+
 body {
   background-color: black;
   color: white;
-  font-family: 'Ubuntu', sans-serif;
+
 }
 
 body, html {
   width: 100%;
+
 }
 
 #parent {
   display: flex;
-justify-content: center;
-align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 #header {
   text-align: center;
   font-size: 15em;
+  border-bottom: 1px solid white;
+  display: inline;
 }
 
 #jobTitle {
   text-align: center;
   font-size: 4.5em;
-    border-top: 1px solid white;
-    display: inline;
-      margin: 0 auto;
 }
 
 #icons {
@@ -34,13 +38,13 @@ align-items: center;
 }
 
 #icons span{
-width:33.33333333%;
+  width:33.33333333%;
   float: left;
 }
 
 #icons img {
  width: 150px;
- transition: width 2s;
+ transition: 2s;
 }
 
 #icons img:hover {
@@ -69,11 +73,11 @@ width:33.33333333%;
 }
 
 .title {
-  font-size: 4.5em;
+  font-size: 5em;
 }
 
 .description {
-  font-size: 2em;
+  font-size: 2.5em;
 }
 
 .slideshow {
