@@ -5,12 +5,10 @@ html div {
 body {
   background-color: black;
   color: white;
-
 }
 
 body, html {
   width: 100%;
-
 }
 
 #parent {
@@ -21,20 +19,38 @@ body, html {
 
 #header {
   text-align: center;
-  font-size: 15em;
+  font-size: 16vw;
   border-bottom: 1px solid white;
   display: inline;
+  -webkit-animation: fadein 4s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 
 #jobTitle {
   text-align: center;
-  font-size: 4.5em;
+  font-size: 4vw;
 }
 
 #icons {
 	text-align: center;
 	width:100%;
-	margin: 50px auto 200px;
+	margin: 50px auto 11vw;
 }
 
 #icons span{
@@ -43,12 +59,12 @@ body, html {
 }
 
 #icons img {
- width: 150px;
+ width: 25%;
  transition: 2s;
 }
 
 #icons img:hover {
-  width: 175px;
+  width: 30%;
 }
 
 .bodyWrapper {
@@ -78,8 +94,25 @@ body, html {
 
 .description {
   font-size: 2.5em;
+  text-align: justify
+}
+
+.description2 {
+  font-size: 2em;
+  text-align: justify
 }
 
 .slideshow {
   width: 100%;
 }
+
+img.blur {
+-webkit-filter: blur(30px); -moz-filter: blur(30px);
+-o-filter: blur(30px); -ms-filter: blur(30px);
+filter: url(#blur); filter: blur(30px);  filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='3');
+-webkit-transition: 2s -webkit-filter linear;
+-o-transition: 2s -o-filter linear;
+
+}
+img.blur:hover  { -webkit-filter: blur(0px); -moz-filter: blur(0px); -o-filter: blur(0px); -ms-filter: blur(0px);
+filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='0'); filter: blur(0px); }
