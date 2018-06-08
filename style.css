@@ -22,7 +22,7 @@ body, html {
   font-size: 16vw;
   border-bottom: 1px solid white;
   display: inline;
-  -webkit-animation: fadein 4s;
+  -webkit-animation: fadein 2s;
 }
 
 @keyframes fadein {
